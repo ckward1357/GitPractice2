@@ -1,0 +1,128 @@
+
+body{
+    margin: 0px 20px 20px 20px;
+    background-color: #17245c;
+      font-family: sans-serif;
+  }
+  
+  main {
+   width: 960px;
+     margin: 0 auto;
+  }
+  
+  .header-pic {
+    height: 90px;
+    margin-bottom:1.5em;
+  }
+  
+  #bio {
+    display:flex;
+    width: auto;
+    Height: 200px;
+   margin-bottom:1.5em;
+  }
+  
+  #bio-choose {
+    width:100%;
+  margin-left: 10px
+  }
+  
+  
+  #profile-pic{
+    width:200px;
+    height:195px;
+  }
+  #name-date { 
+  display: flex;
+    justify-content: space-between;
+     background-color: #17245c;
+    padding:5px;
+    margin-bottom: 25px
+  }
+  
+  .time-format {
+    font-size: 1.25em;
+      font-weight: 500;
+    color: #fff;
+  }
+  
+  #choose-list {
+    background-color: #777;
+    padding: 15px;
+    height: 108px;  
+    max-height:108px;
+    color: #eee;
+  }
+  
+  ul{
+    margin:0;
+    padding-left: 15px;
+   
+  }
+  
+  h2, p, h4 {
+    margin: 0px
+  }
+  
+  
+  
+  #tech {
+    display: flex;
+    justify-content:space-between;
+    width: auto;
+    height: 200px;
+    background-color:#17245c; 
+    margin-bottom: 30px;
+  
+  }
+  
+  figure{
+    margin: 5px 0;
+    text-align:center;
+  }
+  
+  figure > img{
+    height:150px;
+    text-align: center;
+    
+  }
+  figcaption{
+  max-width: 150px;
+  max-height:150px;
+    color: #eee;
+    text-align:center;
+    background-color: rgba(0,0,0,.3);
+    position:relative;
+    top:-20px;
+  }
+  
+  #interest{
+    width: auto;
+    height: 200px;
+    background-color: 17245c;
+    color:#eee;
+  }
+  
+  #excited-about {
+    background-color: 
+      #666;
+    margin: 0;
+  }
+  
+  #excited-about > p{
+    color:#eee; 
+  }
+  
+  .javascript {
+    margin: 10px 10px 10px 0px;
+    padding: 10px;
+  }
+  
+  .text{
+   padding: 0px 10px 30px 10px 
+  }
+  
+  .centered {
+    text-align: center;
+    color: #fff;
+  }  

@@ -35,6 +35,7 @@ body h1,h4 {
 
 .navlist{
     display:flex;
+    justify-content: flex-end;
     list-style: none;
 }
 .navlist a {
@@ -43,6 +44,7 @@ body h1,h4 {
     padding: .75em .5em;
     color:#fff;
 }
+
 
 .navlist a:hover{
     background-color:var(--coral);

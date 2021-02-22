@@ -68,6 +68,13 @@ body h1,h4 {
     height:100vh;
 }
 
+#welcome-section h1{
+    font-size: 3.5rem;
+
+}
+#welcome-section h4{
+    font-size:1.5rem;
+}
 #projects{
     display:flex;
     flex-wrap:wrap;

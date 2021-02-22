@@ -1,3 +1,8 @@
+*{
+font-family: 'Cabin', sans-serif;
+}
+
+
 :root{
     box-sizing: border-box;
     --white: #ffffff;

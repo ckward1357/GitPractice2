@@ -35,4 +35,31 @@ let myBool = true
 // Array
 
 let myArray = [] // this is an empty array
+//               0   1     2       3      4     javascript starts counting at zero
 let myArray2 = [42,'bob',myBool, ANSWER, true] //these are some valid items you can put in an array
+
+let secondElement = myArray2[1]
+
+myArray2.push("Caeden") //added element to the end of the array
+
+myArray2.unshift("Hello World") // added element to the beginning of the array
+
+let myLongString = "as;dlfkjasd;fkjas;ldfja;sds;kl" //just an array of characters
+
+myLongString.length //this counts the number of characters in a string
+
+//object
+
+
+let minObject = {}
+
+const myCar = {
+        make: "Chevorlet",
+        color: "Red",
+        Year: "1965",
+        vin: "123123123123123"
+}
+//Functions
+function sumTwoThings(one, two){
+return (one + two)
+}

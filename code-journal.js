@@ -63,3 +63,10 @@ const myCar = {
 function sumTwoThings(one, two){
 return (one + two)
 }
+
+//Arrow Functions
+ //a higher order functions is a function that accepts another function as a parameter.
+ //filter,map and reduce are the  most poplular, but forEach, every, find, and some are also HOFs
+ const theFunction = () => { // multiple lines use curly braces and. . .
+         return 'I am awesome'
+ }

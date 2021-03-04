@@ -14,3 +14,7 @@
 figure > img {
 height:200px;
 }
+
+figcaption{
+    text-align: center;
+}

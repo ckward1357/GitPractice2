@@ -1,4 +1,4 @@
-import {films} from '../starwars/Data/films.js'
+import {films} from './Data/films.js.js'
 
 
 let filmList = document.querySelector('#filmList')

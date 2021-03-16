@@ -6,11 +6,12 @@ const mainHeader = document.createElement('header')
 
 document.body.insertBefore(mainHeader, mainElement)
 
+// Male Character Button
 const maleButton = document.createElement('button')
 maleButton.textContent = 'Male Characters'
 mainHeader.appendChild(maleButton)
 maleButton.addEventListener('click', () => populateDOM(maleCharacters))
-
+// Male Character Button
 
 
 
@@ -20,11 +21,26 @@ const femaleButton = document.createElement('button')
 femaleButton.textContent = 'Female Characters'
 mainHeader.appendChild(femaleButton)
 femaleButton.addEventListener('click', () => populateDOM(femaleCharacters))
+// Female Character Button
+
+// Other Characters Button
+const othersButton = document.createElement('button')
+othersButton.textContent = 'Other Characters'
+mainHeader.appendChild(othersButton)
+othersButton.addEventListener('click', () => populateDOM(otherCharacters))
+// Other Characters Button
+
 
 
 const maleCharacters = people.filter(person => person.gender === 'male')
 const femaleCharacters = people.filter(person => person.gender === 'female')
-
+const otherCharacters = people.filter(person =>  {
+    if (person.gender === 'n/a' || 
+        person.gender === 'hermaphrodite' ||
+        person.gender === 'none') {
+        return person
+    }
+})
 
 function populateDOM(characters){
     removeChildren (mainElement)

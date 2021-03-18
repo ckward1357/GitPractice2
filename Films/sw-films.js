@@ -1,4 +1,4 @@
-import {films} from '../data/films.js.js.js.js'
+import {films} from '../data/films.js'
 
 
 let filmList = document.querySelector('#filmList')

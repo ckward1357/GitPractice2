@@ -103,6 +103,11 @@ body h1,h4 {
 
 figcaption {
     text-align: center;
+    color:black;
+}
+
+figcaption:visited{
+    color:black;
 }
 
 figcaption > span {

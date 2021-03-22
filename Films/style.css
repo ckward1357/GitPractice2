@@ -3,11 +3,13 @@
 }
 body{
    background-color: black;
+   
 }
 
 #filmList{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 figure{

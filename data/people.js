@@ -1732,7 +1732,7 @@ export const people = [
         "skin_color": "silver, red",
         "eye_color": "red, blue",
         "birth_year": "unknown",
-        "gender": "female",
+        "gender": "n/a",
         "homeworld": "https://swapi.co/api/planets/28/",
         "films": [
             "https://swapi.co/api/films/5/",

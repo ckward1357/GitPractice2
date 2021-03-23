@@ -2,9 +2,15 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+h1{
+    color:white;
+}
 main {
 display: flex;
+}
+
+nav{
+    width: 400px;
 }
 
 body{
@@ -24,3 +30,4 @@ text-decoration: none;
 ul li:hover {
 color:yellow;
 }
+

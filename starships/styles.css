@@ -20,3 +20,7 @@ a {
 color:white;
 text-decoration: none;
 }
+
+ul li:hover {
+color:yellow;
+}

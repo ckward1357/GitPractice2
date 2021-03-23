@@ -7,11 +7,18 @@ h1{
 }
 main {
 display: flex;
+height:100vh;
 }
 
 nav{
-    width: 400px;
+    width: 200px;
 }
+
+img, nav{
+    position:relative;
+    z-index: 1;
+}
+
 
 body{
 

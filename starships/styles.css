@@ -5,18 +5,18 @@
 .title{
     color:white;
     font-family: 'Bungee Inline', cursive;
+    text-align: center;
+    margin: 3rem;
 
 }
 main {
-display: flex;
-height:100vh;
-font-family: 'Roboto', sans-serif;
+    display: flex;
+    height:100vh;
+    font-family: 'Roboto', sans-serif;
 }
 
 .shipView {
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    margin: 13rem;
 }
 
 nav {
@@ -29,19 +29,19 @@ img, nav{
 }
 
 
-body{
-
-}
 
 li {
-list-style-type: none;
+    list-style-type:none;
+    padding-top:10px;
+
 }
 
 
 a {
-color:white;
-text-decoration: none;
+    color:white;
+    text-decoration: none;
 }
+
 
 ul li:hover {
 color:yellow;

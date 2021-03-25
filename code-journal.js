@@ -72,3 +72,13 @@ return (one + two)
  }
 
 
+//array helper method 'map'
+
+let filmURLs =[
+        "https://swapi.co/api/films/",
+        "https://swapi.co?api?films/5/",
+        "https://swapi.co?api?films/4/this one is longer... even longer",
+        "https://swapi.co?api?films/6?",
+        "https: "
+        "https://swapi.co?api?films/1/"
+];

@@ -2,12 +2,15 @@
     margin: 0;
     box-sizing: border-box;
 }
-h1{
+.title{
     color:white;
+    font-family: 'Bungee Inline', cursive;
+
 }
 main {
 display: flex;
 height:100vh;
+font-family: 'Roboto', sans-serif;
 }
 
 .shipView {

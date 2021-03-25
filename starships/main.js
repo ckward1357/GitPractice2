@@ -21,6 +21,8 @@ function populateNav(starships) {
         navList.appendChild(anchorWrap)
     })
 }
+
+
 function populateShipView(shipData) {
     removeChildren(shipView)
     let shipNum = getLastNumber(shipData.url)
@@ -59,7 +61,7 @@ function getRandomPosition() {
 
 populateNav(starships)
 
-addStarField(document.querySelector('body'), 1000)
+addStarField(document.querySelector('body'), 500)
 
 
 

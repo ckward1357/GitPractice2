@@ -80,5 +80,35 @@ let filmURLs =[
         "https://swapi.co?api?films/4/this one is longer... even longer",
         "https://swapi.co?api?films/6?",
         "https: "
-        "https://swapi.co?api?films/1/"
+        "https://swapi.co?api?films/1"
 ];
+
+
+
+
+
+// broken code for dialog box html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+<div class="modal">
+<div class="modal-background"></div>
+<div class="modal-content">
+    <h1 class ="box">Sorry! That Ship is Currently Under Construction.</h1>
+</div>
+<button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+//Broken code for dialog box javascript
+
+const dialog = document.querySelector('.modal')
+const closeButton = document.querySelector('.modal-close')
+const modalBackground = document.querySelector('.modal-background')
+
+closeButton.addEventListener('click', () => {
+    dialog.classList.toggle("is-active")
+})
+
+modalBackground.addEventListener('click', () => {
+    dialog.classList.toggle("is-active")
+})
+
+dialog.classList.toggle("is-active")

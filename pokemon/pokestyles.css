@@ -11,13 +11,9 @@
 }
 
 .scene {
-width: 260px;
-height: 200;
+width: 200px;
+height: 260px;
 border: 1px solid red;
 margin: 10px;
 }
 
-.pokeImage{
-height: 200px;
-width: 200px;
-}

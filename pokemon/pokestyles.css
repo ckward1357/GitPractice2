@@ -47,3 +47,7 @@ margin: 10px;
     background: blue;
     transform: rotateY(180deg);
   }
+
+  #submitButton {
+    color: red;
+  }

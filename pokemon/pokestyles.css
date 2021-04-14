@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+
+button.navbutton{
+
+}
+
 .pokeGrid{
     display: flex;
     flex-wrap: wrap;
@@ -13,8 +18,9 @@
 .scene {
 width: 200px;
 height: 260px;
-border: 1px solid red;
+
 margin: 10px;
+box-shadow: 3px 3px 6px;
 }
 
 .card {
@@ -37,17 +43,19 @@ margin: 10px;
     text-align: center;
     font-weight: bold;
     backface-visibility: hidden;
+    
   }
 
   .card__face--front {
-    background: red;
+    background-image: linear-gradient(to right, blue, cyan);
+
   }
   
   .card__face--back {
-    background: blue;
+    background-image: linear-gradient(to right, red, orange);
     transform: rotateY(180deg);
   }
 
   #submitButton {
-    color: red;
+    color: blue;
   }

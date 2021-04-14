@@ -11,9 +11,8 @@
 <body>
     <header>
     <h1>Gotta Catch Em All!</h1>
-    <button class="loadPokemon button is-primary">Load Pokemon</button>
-    <button id="fetchSelectedPokemon" class="button is-info">Fetch Selected Pokemon</button> 
-<!-- thor said not to copy the button above and to come up with something else -->
+    <button class="loadPokemon button is-primary navbutton">Load Pokemon</button>
+    <button id="fetchSelectedPokemon" class="button is-info navbutton">Find Specific Pokemon</button> 
 </header>
 <main>
     <div class="pokeGrid"></div>
@@ -23,7 +22,7 @@
         <div class = "modal-content">
             <form class="box">
                 <div class="field">
-                    <label class="label">Enter the ID or Name of the Pokemon you want to fetch:</label>
+                    <label class="label">Enter the ID or Name of the Pokemon you are looking for:</label>
                     <div class="control">
                         <input class="input" type="number" placeholder="e.g. 1 for Bulbasaur">
                     </div>    

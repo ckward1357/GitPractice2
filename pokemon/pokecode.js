@@ -1,18 +1,34 @@
 const pokeGrid = document.querySelector('.pokeGrid')
 const loadButton = document.querySelector('.loadPokemon')
 const fetchButton = document.querySelector('#fetchSelectedPokemon')
+const newButton = document.querySelector('#newPokemon')
 
-const dialog = document.querySelector('.modal')
-const closeButton = document.querySelector('.modal-close')
-const modalBackground = document.querySelector('.modal-background')
-const submitButton = document.querySelector('#submitButton')
 
-closeButton.addEventListener('click', () => {
-    dialog.classList.toggle("is-active")
-})
+class Pokemon {
+    constructor(name, height, weight, abilities, moves) {
+        this.id = 900
+        this.name = name
+        this.height = height
+        this.weight = weight
+        this.abilities = abilities
+        this.moves = moves
 
-modalBackground.addEventListener('click', () => {
-    dialog.classList.toggle("is-active")
+    }
+}
+
+newButton.addEventListener('click', () => {
+    let pokeName = prompt('What is the name of your new Pokemon?')
+    let pokeHeight = prompt('what is the height of your new Pokemon?')
+    let pokeWeight = prompt('Pokemon Weight?')
+    let newPokemon = new Pokemon(
+        pokeName,
+        pokeHeight,
+        pokeWeight,
+        ['eat', 'sleep'],
+        ['study', 'game']
+    )
+    console.log(newPokemon)
+    populatePokeCard(newPokemon)
 })
 
 loadButton.addEventListener('click', () => {
@@ -20,18 +36,14 @@ loadButton.addEventListener('click', () => {
 })
 
 fetchButton.addEventListener('click', () => {
-    dialog.classList.toggle("is-active")
-    /* getAPIData(`https://pokeapi.co/api/v2/pokemon/25`).then(
-        (data) => {
-            populatePokeCard(data)
-        }
-    ) */
+let pokeNameOrId = prompt("Enter Pokemon ID or Name").toLowerCase()
+console.log(pokeNameOrId)
+    getAPIData(`https://pokeapi.co/api/v2/pokemon/${pokeNameOrId}`).then(
+        (data) => populatePokeCard(data)
+        
+    )
 })
 
-submitButton.addEventListener('click', () => {
-    let inputField = document.querySelector('.input')
-    inputValue = inputField.value
-})
 
 async function getAPIData(url) {
     try {
@@ -99,5 +111,7 @@ function getImageFileName(pokemon) {
     if (pokemon.id < 10) pokeId = `00${pokemon.id}`
     if (pokemon.id > 9 && pokemon.id < 100) pokeId = `0${pokemon.id}`
     if (pokemon.id > 99 && pokemon.id < 810) pokeId = pokemon.id
+    if (pokemon.id === 900) {
+        return `images/pokeball.png`}
     return `https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/images/${pokeId}.png`
 }

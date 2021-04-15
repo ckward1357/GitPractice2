@@ -14,10 +14,12 @@ button.navButton{
 padding: .8rem;
 font-weight:600;
 font-size:medium;
-background-color: aquamarine;
+background-color: #7fffd4;
+border: 1px solid black;
 border-radius: 15px;
 margin: 20px;
-color:mediumblue
+background-image: linear-gradient(to right, gray, lightgray);
+
 }
 
 div.buttonDiv{
@@ -39,9 +41,8 @@ margin-top: 1.5rem;
 .scene {
 width: 200px;
 height: 260px;
-
 margin: 10px;
-box-shadow: 3px 3px 6px;
+box-shadow: 5px 5px 10px;
 }
 
 .card {

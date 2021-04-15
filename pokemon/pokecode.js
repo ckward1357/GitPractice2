@@ -31,9 +31,7 @@ newButton.addEventListener('click', () => {
     populatePokeCard(newPokemon)
 })
 
-loadButton.addEventListener('click', () => {
-    loadPage()
-})
+loadButton.addEventListener('click', () => loadPage())
 
 fetchButton.addEventListener('click', () => {
 let pokeNameOrId = prompt("Enter Pokemon ID or Name").toLowerCase()

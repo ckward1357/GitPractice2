@@ -2,32 +2,32 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-
-
-
-h1.pokeHeader{
+h1#pokeHeader{
 display: flex;
 justify-content: center;
 font-family: 'Original Surfer', cursive;
 font-size: 3rem;
 padding: 1rem;
 color:white;
+text-shadow: 2px 2px 1px #000;
+background-image: linear-gradient(to right, red, firebrick);
 }
-
 
 
 button.navButton{
   border: 0;
   padding: 1rem;
-  margin:1rem 0 2rem 2rem;
+  margin:2rem 0 1rem 2rem;
   font-size:1.3rem;
+  font-family: 'Oranienbaum', serif;
   text-align: center;
   color:white;
   text-shadow: 1px 1px 2px #000;
   border-radius: 10px;
-  background-color:indigo;
+  background-color:firebrick;
   box-shadow: 
   inset 2px 2px 3px rgba(255, 255, 255, .6),
   inset -2px -2px 3px rgba(0, 0, 0, .6);
@@ -41,7 +41,7 @@ justify-content: center;
 }
 
 body {
-background-color:#444;
+background-color:#333;
 }
 
 img{
@@ -53,6 +53,7 @@ margin-top: 1.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 3rem 
 }
 
 .scene {
@@ -89,17 +90,32 @@ box-shadow: 5px 5px 10px;
 }
 
 .card__face--front {
-  background-image: linear-gradient(to right, blue, cyan);
+  background-image: linear-gradient(to right, red, firebrick);
   font-family: 'Oranienbaum', serif;
-  font-size: x-large;
+  font-size: 1.5rem;
   text-align: center;;
 }
 
 .card__face--back {
-  background-image: linear-gradient(to right, red, orange);
+  background-image: linear-gradient(to right, #555, #bbb);
   transform: rotateY(180deg);
   font-family: 'Oranienbaum', serif;
-  font-size:x-large;
+  font-size:2.4rem;
   text-align:center;
+  padding-top:3.5rem;
+  color:firebrick;
 }
 
+
+.toTopLink{
+  margin-left:85%;
+  height: 80px;
+  width: 80px;
+  padding: 1rem;
+  background-color:firebrick;
+  border: 1px solid white;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  color:white;
+}

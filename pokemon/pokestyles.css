@@ -4,27 +4,44 @@
   box-sizing: border-box;
 }
 
+
+
+
 h1.pokeHeader{
 display: flex;
 justify-content: center;
+font-family: 'Original Surfer', cursive;
+font-size: 3rem;
+padding: 1rem;
+color:white;
 }
+
 
 
 button.navButton{
-padding: .8rem;
-font-weight:600;
-font-size:medium;
-background-color: #7fffd4;
-border: 1px solid black;
-border-radius: 15px;
-margin: 20px;
-background-image: linear-gradient(to right, blue, cyan);
-
+  border: 0;
+  padding: 1rem;
+  margin:1rem 0 2rem 2rem;
+  font-size:1.3rem;
+  text-align: center;
+  color:white;
+  text-shadow: 1px 1px 2px #000;
+  border-radius: 10px;
+  background-color:indigo;
+  box-shadow: 
+  inset 2px 2px 3px rgba(255, 255, 255, .6),
+  inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
+
+
 
 div.buttonDiv{
 display:flex;
 justify-content: center;
+}
+
+body {
+background-color:#444;
 }
 
 img{
@@ -43,6 +60,7 @@ width: 200px;
 height: 260px;
 margin: 10px;
 box-shadow: 5px 5px 10px;
+
 }
 
 .card {
@@ -52,6 +70,7 @@ box-shadow: 5px 5px 10px;
   position:relative;
   transition: transform 1s;
   transform-style: preserve-3d;
+
 }
 
 .card.is-flipped {
@@ -65,16 +84,22 @@ box-shadow: 5px 5px 10px;
   text-align: center;
   font-weight: bold;
   backface-visibility: hidden;
+  border-radius: 10px;
   
 }
 
 .card__face--front {
   background-image: linear-gradient(to right, blue, cyan);
-
+  font-family: 'Oranienbaum', serif;
+  font-size: x-large;
+  text-align: center;;
 }
 
 .card__face--back {
   background-image: linear-gradient(to right, red, orange);
   transform: rotateY(180deg);
+  font-family: 'Oranienbaum', serif;
+  font-size:x-large;
+  text-align:center;
 }
 

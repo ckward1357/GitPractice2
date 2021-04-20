@@ -60,7 +60,7 @@ async function getAPIData(url) {
 
 function loadPage() {
     removeChildren(pokeGrid)
-    getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=25&offset=130`).then(
+    getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=151`).then(
         async (data) => {
             for (const singlePokemon of data.results) {
                 await getAPIData(singlePokemon.url).then(

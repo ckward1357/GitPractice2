@@ -103,7 +103,9 @@ body h1,h4 {
 
 figcaption {
     text-align: center;
+    font-size: 1.5rem;
     color:black;
+
 }
 
 figcaption:visited{

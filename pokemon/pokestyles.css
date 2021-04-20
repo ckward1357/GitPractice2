@@ -104,11 +104,12 @@ box-shadow: 5px 5px 10px;
   text-align:center;
   padding-top:3.5rem;
   color:firebrick;
+  text-shadow: 1px 1px 1px black;
 }
 
 
 .toTopLink{
-  margin-left:85%;
+  margin-left:45%;
   height: 80px;
   width: 80px;
   padding: 1rem;

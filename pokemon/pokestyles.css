@@ -60,7 +60,7 @@ margin-top: 1.5rem;
 width: 200px;
 height: 260px;
 margin: 10px;
-box-shadow: 5px 5px 10px;
+box-shadow: 5px 5px 10px black;
 
 }
 
@@ -90,7 +90,7 @@ box-shadow: 5px 5px 10px;
 }
 
 .card__face--front {
-  background-image: linear-gradient(to right, red, firebrick);
+  background-image: linear-gradient(to right, #555, #bbb);
   font-family: 'Oranienbaum', serif;
   font-size: 1.5rem;
   text-align: center;;
@@ -119,4 +119,69 @@ box-shadow: 5px 5px 10px;
   text-align: center;
   text-decoration: none;
   color:white;
+}
+
+
+
+.grass {
+  box-shadow: 5px 5px 10px rgb(92,142,52); 
+}
+
+.fire {
+  box-shadow: 5px 5px 10px rgb(189,56,29); 
+}
+
+.water{
+  box-shadow: 5px 5px 10px rgb(46,82,189); 
+}
+
+.bug{
+  box-shadow: 5px 5px 10px rgb(141,152,49); 
+}
+
+.normal {
+  box-shadow: 5px 5px 10px beige; 
+}
+
+.flying {
+  box-shadow: 5px 5px 10px rgb(113,124,192); 
+}
+
+
+.electric{
+  box-shadow: 5px 5px 10px rgb(240,187,69); 
+
+}
+
+.poison {
+  box-shadow: 5px 5px 10px rgb(140,76,148); 
+}
+
+.ground {
+  box-shadow: 5px 5px 10px rgb(193,171,98); 
+}
+
+.fairy {
+  box-shadow: 5px 5px 10px pink; 
+}
+
+.fighting {
+  box-shadow: 5px 5px 10px rgb(120,56,35); 
+}
+
+.psychic {
+  box-shadow: 5px 5px 10px rgb(198,67,102); 
+}
+
+.rock {
+  box-shadow: 5px 5px 10px rgb(156,134,74); 
+}
+
+.ghost{
+  box-shadow: 5px 5px 10px rgb(95,96,168); 
+}
+
+.dragon {
+  box-shadow: 5px 5px 10px rgb(113,95,214); 
+
 }

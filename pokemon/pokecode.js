@@ -7,32 +7,38 @@ const newButton = document.querySelector('#newPokemon')
 
 
 class Pokemon {
-    constructor(name, height, weight, abilities, moves) {
+    constructor(name, height, weight, abilities, moves, types) {
         this.id = 900
         this.name = name
         this.height = height
         this.weight = weight
         this.abilities = abilities
         this.moves = moves
-
+        this.types = types
     }
 }
 
 newButton.addEventListener('click', () => {
-    removeChildren(pokeGrid)
     let pokeName = prompt('What is the name of your new Pokemon?')
-    let pokeHeight = prompt('what is the height of your new Pokemon?')
-    let pokeWeight = prompt('Pokemon Weight?')
+    let pokeHeight = prompt('What is the height of your Pokemon?')
+    let pokeWeight = prompt('Pokemon weight?')
     let newPokemon = new Pokemon(
-        pokeName,
-        pokeHeight,
-        pokeWeight,
-        ['eat', 'sleep'],
-        ['study', 'game']
+      pokeName,
+      pokeHeight,
+      pokeWeight,
+      ['eat', 'sleep'],
+      ['study', 'game'],
+      [
+        {
+          type: {
+            name: 'normal',
+          },
+        },
+      ],
     )
-    console.log(newPokemon)
     populatePokeCard(newPokemon)
-})
+  })
+  
 
 loadButton.addEventListener('click', () => loadPage())
 
@@ -95,22 +101,32 @@ function populateCardFront(pokemon) {
     let frontImage = document.createElement('img')
     frontImage.src = getImageFileName(pokemon)
 
-    pokeFront.appendChild(frontLabel)
+    let pokeType = pokemon.types[0].type.name
+    pokeFront.classList.add(pokeType)
+
+//might deletle later ^
+
     pokeFront.appendChild(frontImage)
+    pokeFront.appendChild(frontLabel)
     return pokeFront
 }
 
 function populateCardBack(pokemon) {
     let pokeBack = document.createElement('div')
     pokeBack.className = 'card__face card__face--back'
+
     let backLabel = document.createElement('p')
-    backLabel.textContent = 
-    `ID: ${pokemon.id}
-    Moves: ${pokemon.moves.length} 
-    Weight: ${pokemon.weight}`
+    backLabel.textContent = `Moves: ${pokemon.moves.length}`
+
+    let backType = document.createElement('p')
+    backType.textContent = `Types: ${pokemon.types.length}`
+
+    let backId  = document.createElement('p')
+    backId.textContent = `ID: ${pokemon.id}`
     
-    
+    pokeBack.appendChild(backId)    
     pokeBack.appendChild(backLabel)
+    pokeBack.appendChild(backType)
     return pokeBack
 }
 

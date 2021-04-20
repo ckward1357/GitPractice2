@@ -18,7 +18,7 @@ background-color: #7fffd4;
 border: 1px solid black;
 border-radius: 15px;
 margin: 20px;
-background-image: linear-gradient(to right, gray, lightgray);
+background-image: linear-gradient(to right, blue, cyan);
 
 }
 
@@ -78,6 +78,3 @@ box-shadow: 5px 5px 10px;
   transform: rotateY(180deg);
 }
 
-#submitButton {
-  color: blue;
-}

@@ -1,3 +1,5 @@
+import { removeChildren } from '../utils/index.js'
+
 const pokeGrid = document.querySelector('.pokeGrid')
 const loadButton = document.querySelector('.loadPokemon')
 const fetchButton = document.querySelector('#fetchSelectedPokemon')
@@ -17,6 +19,7 @@ class Pokemon {
 }
 
 newButton.addEventListener('click', () => {
+    removeChildren(pokeGrid)
     let pokeName = prompt('What is the name of your new Pokemon?')
     let pokeHeight = prompt('what is the height of your new Pokemon?')
     let pokeWeight = prompt('Pokemon Weight?')
@@ -34,6 +37,7 @@ newButton.addEventListener('click', () => {
 loadButton.addEventListener('click', () => loadPage())
 
 fetchButton.addEventListener('click', () => {
+    removeChildren(pokeGrid)
 let pokeNameOrId = prompt("Enter Pokemon ID or Name").toLowerCase()
 console.log(pokeNameOrId)
     getAPIData(`https://pokeapi.co/api/v2/pokemon/${pokeNameOrId}`).then(
@@ -55,6 +59,7 @@ async function getAPIData(url) {
 }
 
 function loadPage() {
+    removeChildren(pokeGrid)
     getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=25&offset=130`).then(
         async (data) => {
             for (const singlePokemon of data.results) {

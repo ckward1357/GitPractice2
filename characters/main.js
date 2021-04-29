@@ -5,6 +5,7 @@ const mainElement = document.querySelector('#main')
 
 const mainHeader = document.createElement('header')
 
+
 document.body.insertBefore(mainHeader, mainElement)
 
 // Male Character Button

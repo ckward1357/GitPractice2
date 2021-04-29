@@ -10,17 +10,21 @@ button{
     height:50px;
     margin-left:20%;
     margin-bottom: 3rem;
+    background-color: #333;
+    border-radius: 1rem;
     }
     
 button:hover{
     color:yellow;
 }
 
+
 #main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
+    margin: .5rem;
 }
 
 .title{

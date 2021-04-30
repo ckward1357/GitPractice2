@@ -36,7 +36,7 @@ button.navButton{
     color:white;
     text-shadow: 1px 1px 2px #000;
     border-radius: 10px;
-    background-color:Blue;
+    background-color:slateblue;
     box-shadow: 
     inset 2px 2px 3px rgba(255, 255, 255, .6),
     inset -2px -2px 3px rgba(0, 0, 0, .6);
@@ -64,5 +64,7 @@ figure {
 
 figcaption{
     text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-top:5px;
 }
 

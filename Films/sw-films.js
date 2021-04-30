@@ -1,5 +1,7 @@
 import {films} from '../data/films.js'
 import {getLastNumber} from '../utils/index.js'
+import {addStarField, getRandomPosition} from '../utils/index.js'
+
 
 let filmList = document.querySelector('#filmList')
 
@@ -19,4 +21,5 @@ for (let i = 0; i < films.length; i++) {
 
     filmList.appendChild(posterFig)
 }
+addStarField(document.querySelector('body'), 500)
 

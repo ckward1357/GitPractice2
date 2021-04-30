@@ -26,10 +26,14 @@ main{
 
 figure{
     margin: 1em;
+    z-index: 1;
 }
 
 figcaption{
     text-align: center;
     background-color: black;
     color: #fff;
+    font-family: 'Bungee Inline', cursive;
+    font-size: 1.5rem;
+    z-index: 1;
 }

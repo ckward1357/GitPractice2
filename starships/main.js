@@ -34,6 +34,9 @@ function populateShipView(shipData) {
     shipImage.hidden = true
     })
     shipView.appendChild(shipImage)
+    shipImage.addEventListener('error', (err) => {
+        alert(`Sorry! That ship is under construction!`)
+    })
 }
 
 

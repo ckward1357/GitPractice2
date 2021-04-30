@@ -20,8 +20,10 @@ missedVotesButton.addEventListener('click', () => {
     alert(`${missedVotesRep.name} missed votes ${missedVotesRep.missed_votes_pct}% of the time!`)
 })
 
-
-
+shipImage.addEventListener('error', (err) => {
+    alert(`${missedVotesRep.name} missed votes ${missedVotesRep.missed_votes_pct}% of the time!`)
+})
+   
 
 partyHackButton.addEventListener('click', () => {
     alert(`There are ${partyHackArray.length} representatives who vote with their

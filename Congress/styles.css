@@ -7,18 +7,24 @@ h1#congressHeader{
     text-align: center;
     font-family: 'Righteous', cursive;
     font-size: 2.5rem;
-    background-image: linear-gradient(to right, red, blue);
+    background-image: linear-gradient(to bottom, red, blue);
     padding: 2rem;
     color: white;
+    box-shadow: 5px 5px 10px black;
 }
 
 
 
 body{
-background-color: slateblue;
+background-color:lavender;
 font-family: 'Roboto', sans-serif;
+box-shadow: inset 5px 5px 10px black;
 }
 
+div#buttonHeader { 
+    display: flex;
+    justify-content: space-around;
+}
 
 button.navButton{
     border: 0;
@@ -30,7 +36,7 @@ button.navButton{
     color:white;
     text-shadow: 1px 1px 2px #000;
     border-radius: 10px;
-    background-color:darkmagenta;
+    background-color:Blue;
     box-shadow: 
     inset 2px 2px 3px rgba(255, 255, 255, .6),
     inset -2px -2px 3px rgba(0, 0, 0, .6);
@@ -39,7 +45,7 @@ button.navButton{
 .figureDiv {
     padding: 1rem 1rem 1rem 1rem;
     margin: 6px;
-    border: 1px solid red;
+    border: 1px solid #333;
     box-shadow: 3px 3px 3px black;
     background-color: white;
     }

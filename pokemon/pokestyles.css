@@ -105,10 +105,10 @@ font-size: 1.5rem;
   background-image: linear-gradient(to right, #555, #bbb);
   transform: rotateY(180deg);
   font-family: 'Oranienbaum', serif;
-  font-size:2.3rem;
-  text-align:center;
-  padding-top:3.5rem;
-  color:firebrick;
+  font-size: 2.3rem;
+  text-align: center;
+  padding-top: 5rem;
+  color: firebrick;
   text-shadow: 1px 1px 1px black;
 }
 

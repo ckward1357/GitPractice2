@@ -58,7 +58,7 @@ margin-top: 1.5rem;
 
 .scene {
 width: 200px;
-height: 260px;
+height: 300px;
 margin: 10px;
 box-shadow: 5px 5px 10px black;
 
@@ -93,8 +93,13 @@ box-shadow: 5px 5px 10px black;
   background-image: linear-gradient(to right, #555, #bbb);
   font-family: 'Oranienbaum', serif;
   font-size: 1.5rem;
-  text-align: center;;
+  text-align: center;
 }
+
+.frontStats {
+font-size: 1.5rem;
+}
+
 
 .card__face--back {
   background-image: linear-gradient(to right, #555, #bbb);

@@ -104,11 +104,23 @@ function populateCardFront(pokemon) {
     let pokeType = pokemon.types[0].type.name
     pokeFront.classList.add(pokeType)
 
-//might deletle later ^
 
-    pokeFront.appendChild(frontImage)
     pokeFront.appendChild(frontLabel)
+    pokeFront.appendChild(frontImage)
+  
+    let pokeHeight = document.createElement('p')
+    pokeHeight.textContent = `Height: ${pokemon.height / 10} Meter(s)`
+    pokeFront.appendChild(pokeHeight)
+    pokeHeight.className = 'frontStats'
+  
+    let pokeWeight = document.createElement('p')
+    pokeWeight.textContent = `Weight: ${pokemon.weight / 10} kg`
+    pokeFront.appendChild(pokeWeight)
+    pokeWeight.className = 'frontStats'
+  
     return pokeFront
+
+    
 }
 
 function populateCardBack(pokemon) {

@@ -14,6 +14,7 @@ padding: 1rem;
 color:white;
 text-shadow: 2px 2px 1px #000;
 background-image: linear-gradient(to right, red, firebrick);
+box-shadow: black 4px 4px 8px;
 }
 
 
